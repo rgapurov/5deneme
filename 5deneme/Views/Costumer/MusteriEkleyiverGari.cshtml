@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "MusteriEkleyiverGari";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>MusteriEkleyiverGari</h1>
+
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form asp-action="MusteriEkleyiverGari" asp-controller="Customer" method="post">
+
+<input type="text" name="Değer1" />
+
+</br>
+<input type="text" name="Değer2"/>
+
+</br>
+
+<button >Musteri Ekle</button>
+
+</form>
+

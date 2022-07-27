@@ -1,13 +1,8 @@
-﻿using _5deneme.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using WebApplication1.Models;
 
-namespace _5deneme.Controllers
+namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
@@ -27,14 +22,7 @@ namespace _5deneme.Controllers
         {
             return View();
         }
-        public IActionResult Hasan()
-        {
-            return View();
-        }
-        public IActionResult Rustam()
-        {
-            return View();
-        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
